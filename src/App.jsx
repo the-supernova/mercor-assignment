@@ -32,6 +32,10 @@ import calendarNum from "./assets/calendar.png";
 import list from "./assets/list.png";
 import menu from "./assets/menu.png";
 import folder from "./assets/folder-2.png";
+import img1 from "./assets/img1.png";
+import img2 from "./assets/img2.png";
+import img3 from "./assets/img3.png";
+import img4 from "./assets/img4.png";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
 function App() {
@@ -76,9 +80,9 @@ function App() {
           comments: 12,
           files: 0,
           peopleSrcs: [
-            "src/assets/person-one.png",
-            "src/assets/person-four.png",
-            "src/assets/person-three.png",
+            personOne,
+            personFour,
+            personThree,
           ],
         },
         {
@@ -89,7 +93,7 @@ function App() {
           hasImage: false,
           content:
             "User research helps you to create an optimal product for users.",
-          peopleSrcs: ["src/assets/person-two.png", "src/assets/person-one.png"],
+          peopleSrcs: [personTwo, personOne],
           comments: 10,
           files: 3
         },
@@ -104,9 +108,9 @@ function App() {
           comments: 3,
           files: 2,
           peopleSrcs: [
-            "src/assets/person-one.png",
-            "src/assets/person-two.png",
-            "src/assets/person-four.png",
+            personOne,
+            personTwo,
+            personFour,
           ],
         },
       ],
@@ -123,13 +127,13 @@ function App() {
           priority: "Low",
           priorityColor: 'bg-[#f9eee3] text-[#d58d49]',
           hasImage: true,
-          srcs: ["/src/assets/img1.png"],
+          srcs: [img1],
           comments: 14,
           files: 15,
           peopleSrcs: [
-            "src/assets/person-three.png",
-            "src/assets/person-four.png",
-            "src/assets/person-one.png",
+            personThree,
+            personFour,
+            personOne,
           ],
         },
         {
@@ -138,10 +142,10 @@ function App() {
           priority: "Low",
           priorityColor: 'bg-[#f9eee3] text-[#d58d49]',
           hasImage: true,
-          srcs: ["/src/assets/img2.png", "/src/assets/img3.png"],
+          srcs: [img2, img3],
           comments: 9,
           files: 10,
-          peopleSrcs: ["src/assets/person-three.png"],
+          peopleSrcs: [personThree],
         },
       ],
     },
@@ -156,12 +160,12 @@ function App() {
           priority: "Completed",
           priorityColor: 'bg-[#e6f3eb] text-[#87c287]',
           hasImage: true,
-          srcs: ["/src/assets/img4.png"],
+          srcs: [img4],
           comments: 12,
           files: 15,
           peopleSrcs: [
-            "src/assets/person-two.png",
-            "src/assets/person-four.png",
+            personTwo,
+            personFour,
           ],
         },
         {
@@ -174,9 +178,9 @@ function App() {
           comments: 12,
           files: 15,
           peopleSrcs: [
-            "src/assets/person-one.png",
-            "src/assets/person-three.png",
-            "src/assets/person-four.png",
+            personOne,
+            personThree,
+            personFour,
           ],
         },
       ],
